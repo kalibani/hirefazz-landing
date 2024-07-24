@@ -2,21 +2,34 @@
 
 import { navbarData } from "@/static-data/navbar";
 import { onScroll } from "@/utils/scrollActive";
-import { signOut, useSession } from "next-auth/react";
+// import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import GlobalSearchModal from "../GlobalSearch";
 import ThemeToggler from "./ThemeToggler";
 
+import { useTranslate } from "@/hooks/useTranslate";
+import { useTranslations } from "next-intl";
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 export default function Navbar() {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [navData, setNavData] = useState(navbarData);
 
-  const { data: session } = useSession();
+  const { language, setLanguage } = useTranslate();
+
+  const t = useTranslations("Navbar");
 
   const pathUrl = usePathname();
 
@@ -49,6 +62,14 @@ export default function Navbar() {
     };
   }, []);
 
+  const handToggleNav = (id: string | number) => {
+    const updatedData = navData.map((x) =>
+      x.id === id ? { ...x, isOpen: !x.isOpen } : { ...x, isOpen: false },
+    );
+
+    setNavData(updatedData);
+  };
+
   return (
     <>
       <header
@@ -80,7 +101,7 @@ export default function Navbar() {
             <div className="w-full self-center">
               <nav>
                 <ul className="navbar flex flex-col items-center justify-center space-y-5 text-center lg:flex-row lg:justify-start lg:space-x-6 lg:space-y-0 xl:space-x-10">
-                  {navbarData.map((item) => (
+                  {navData.map((item) => (
                     <li
                       key={item?.id}
                       className={`${item?.submenu ? "submenu-item group relative" : ""}`}
@@ -100,22 +121,22 @@ export default function Navbar() {
                           onClick={navigationHandler}
                           className={`${pathUrl === item?.href ? "active" : ""} inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
                         >
-                          {item?.title}
+                          {t(item?.title)}
                         </Link>
                       ) : (
                         <>
                           <button
-                            onClick={() => setDropdownToggler(!dropdownToggler)}
+                            onClick={() => handToggleNav(item.id)}
                             className="submenu-taggler inline-flex items-center justify-center text-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                           >
-                            {item?.title}
+                            {t(item?.title)}
 
                             <span className="pl-3">
                               <svg
                                 width="14"
                                 height="8"
                                 viewBox="0 0 14 8"
-                                className={`fill-current ${dropdownToggler ? "rotate-180" : ""}`}
+                                className={`fill-current ${item?.isOpen ? "rotate-180" : ""}`}
                               >
                                 <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
                               </svg>
@@ -123,16 +144,32 @@ export default function Navbar() {
                           </button>
                           {item?.submenu && (
                             <ul
-                              className={`${dropdownToggler ? "" : "hidden lg:block"} submenu space-y-5 pt-5 transition duration-300 lg:invisible lg:absolute lg:top-[120%] lg:w-[250px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]`}
+                              className={`${item?.isOpen ? "" : "hidden"} submenu grid w-[400px] p-4 pt-5 transition duration-300 sm:w-[650px] md:grid-cols-2 lg:invisible lg:absolute lg:top-[120%] lg:w-[650px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full lg:group-hover:opacity-100 dark:lg:border-transparent dark:lg:bg-[#2C3443]`}
                             >
                               {item?.submenu.map((item) => (
-                                <li key={item?.id}>
+                                <li key={item?.id} className="mb-5 mr-2">
                                   <Link
                                     href={item?.href}
                                     onClick={navigationHandler}
-                                    className={`inline-flex items-center justify-center text-center font-heading text-base ${pathUrl === item?.href ? "text-primary dark:text-white" : "text-dark-text hover:text-primary dark:hover:text-white"}`}
+                                    className="inline-flex items-center justify-center font-heading text-base text-dark-text hover:text-primary dark:hover:text-white"
                                   >
-                                    {item?.title}
+                                    <div>
+                                      <div className="mb-2 flex items-center space-x-2">
+                                        <p className="text-base font-medium leading-none">
+                                          {t(item?.title)}
+                                        </p>
+                                        {item?.isComingSoon && (
+                                          <div className="rounded-sm bg-primary px-2 py-[6px] text-sm font-bold leading-none">
+                                            <p className="text-[8px] font-normal text-white">
+                                              Coming Soon
+                                            </p>
+                                          </div>
+                                        )}
+                                      </div>
+                                      <p className="line-clamp-3 hidden text-left text-[12px] leading-snug md:block">
+                                        {t(item?.description)}
+                                      </p>
+                                    </div>
                                   </Link>
                                 </li>
                               ))}
@@ -146,7 +183,7 @@ export default function Navbar() {
               </nav>
             </div>
             <div className="absolute bottom-0 left-0 flex w-full items-center justify-between space-x-5 self-end p-5 lg:static lg:w-auto lg:self-center lg:p-0">
-              {session ? (
+              {/* {session ? (
                 <>
                   <p className="whitespace-nowrap text-dark-text dark:text-white">
                     {session?.user?.name}
@@ -159,28 +196,28 @@ export default function Navbar() {
                     Sign Out
                   </button>
                 </>
-              ) : (
-                <>
-                  <Link
-                    href="/auth/signin"
-                    className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
-                  >
-                    Sign In
-                  </Link>
-                  <Link
-                    href="/auth/signup"
-                    className="w-full whitespace-nowrap rounded bg-[#222C40] px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
-                  >
-                    Sign Up
-                  </Link>
-                </>
-              )}
+              ) : ( */}
+              <>
+                <Link
+                  href="/auth/signin"
+                  className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-3 text-center font-heading hover:bg-opacity-90 dark:text-white lg:w-auto"
+                >
+                  {t("cta1")}
+                </Link>
+                <Link
+                  href="/auth/signup"
+                  className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
+                >
+                  {t("cta2")}
+                </Link>
+              </>
+              {/* )} */}
             </div>
           </div>
 
           <div className="absolute right-5 top-1/2 z-50 flex -translate-y-1/2 items-center lg:static lg:ml-4 lg:translate-y-0 xl:ml-6">
             <div className="flex items-center justify-end">
-              <button
+              {/* <button
                 onClick={() => setSearchModalOpen(true)}
                 className="hidden h-10 w-10 items-center justify-center rounded-full text-dark-text dark:text-white sm:flex"
               >
@@ -208,7 +245,17 @@ export default function Navbar() {
                     </clipPath>
                   </defs>
                 </svg>
-              </button>
+              </button> */}
+
+              <Select onValueChange={(lang) => setLanguage(lang)}>
+                <SelectTrigger className="w-[70px]">
+                  <SelectValue placeholder={language.toLocaleUpperCase()} />
+                </SelectTrigger>
+                <SelectContent className="z-[999]">
+                  <SelectItem value="id">ID</SelectItem>
+                  <SelectItem value="en">EN</SelectItem>
+                </SelectContent>
+              </Select>
 
               <div className="relative flex h-10 w-10 items-center justify-center">
                 <ThemeToggler />

@@ -1,9 +1,12 @@
 export type NavbarItem = {
   id: string | number;
+  isOpen?: boolean;
   title: string;
   href?: string;
   external?: boolean;
   submenu?: Submenu[];
+  isComingSoon?: boolean;
+  description?: string;
 };
 
 export type Submenu = {
@@ -11,4 +14,6 @@ export type Submenu = {
   title: string;
   href: string;
   external?: boolean;
+  isComingSoon?: boolean;
+  description?: string;
 };

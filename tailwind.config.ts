@@ -42,6 +42,7 @@ const config: Config = {
         transparent: "transparent",
         white: "#FFFFFF",
         primary: "#E11D48",
+        secondary: "#003366",
         "dark-text": "#79808A",
         dark: "#111722",
         stroke: "#e5e7eb",

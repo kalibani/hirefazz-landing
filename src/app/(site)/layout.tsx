@@ -1,7 +1,6 @@
 "use client";
 
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
@@ -123,7 +122,6 @@ export default function RootLayout({
         >
           <AuthProvider>
             <ToasterContext />
-            <Navbar />
             {children}
             <Footer />
           </AuthProvider>
