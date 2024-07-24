@@ -6,14 +6,14 @@ export default function FooterAbout() {
     <div className="mb-20 max-w-[330px]">
       <Link href="/" className="mb-6 inline-block">
         <Image
-          src="/images/logo/logo-dark.svg"
+          src="/images/logo/HireFazz-dark.png"
           alt="logo"
           width={215}
           height={50}
           className="hidden dark:block"
         />
         <Image
-          src="/images/logo/logo-light.svg"
+          src="/images/logo/HireFazz-light.png"
           alt="logo"
           width={215}
           height={50}

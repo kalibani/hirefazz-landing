@@ -30,9 +30,10 @@ export default function Hero() {
                 />
               </h1>
               <p className="mb-12 text-base text-dark-text">
-                Handcrafted Next.js starter for your next - Startup,
-                Business, Agency or SaaS Website. Comes with refreshing design, integrations
-                and everything you need to kickstart your next web project.
+                Handcrafted Next.js starter for your next - Startup, Business,
+                Agency or SaaS Website. Comes with refreshing design,
+                integrations and everything you need to kickstart your next web
+                project.
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start">
                 <a
@@ -78,22 +79,23 @@ export default function Hero() {
             <div className="wow fadeInRight relative z-30 mx-auto h-[560px] w-full max-w-[700px] lg:ml-0">
               <div className="absolute right-0 top-0 lg:w-11/12">
                 <Image
-                  src="/images/hero/image-2.jpg"
+                  src="/images/hero/automatic-interview.png"
                   alt="hero-image"
                   width={560}
                   height={520}
                 />
+                <div className="absolute -right-6 -top-6 -z-10 h-full w-full rounded-lg border border-[#d1d5db] border-opacity-10 bg-[#9ca3af] bg-opacity-5 backdrop-blur-[6px] dark:border-[#9ca3af] dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"></div>
               </div>
-              <div className="absolute bottom-0 left-0 z-10">
+              {/* <div className="absolute bottom-0 left-0 z-10">
                 <Image
-                  src="/images/hero/image-1.jpg"
+                  src="/images/hero/analyze-AI.png"
                   alt="hero-image"
                   width={350}
                   height={420}
                 />
-                <div className="absolute -right-6 -top-6 -z-10 h-full w-full border border-primary border-opacity-10 bg-primary bg-opacity-5 backdrop-blur-[6px] dark:border-white dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"></div>
-              </div>
-              <div className="absolute bottom-0 left-0">
+                <div className="absolute -right-6 -top-6 -z-10 h-full w-full border border-primary border-opacity-10 bg-[#d1d5db] bg-opacity-5 backdrop-blur-[6px] dark:border-white dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"></div>
+              </div> */}
+              {/* <div className="absolute bottom-0 left-0">
                 <svg
                   width="72"
                   height="38"
@@ -126,8 +128,8 @@ export default function Hero() {
                     fill="#4A6CF7"
                   />
                 </svg>
-              </div>
-              <div className="absolute bottom-0 left-1/2">
+              </div> */}
+              {/* <div className="absolute bottom-0 left-1/2">
                 <svg
                   width="120"
                   height="120"
@@ -154,7 +156,7 @@ export default function Hero() {
                     </radialGradient>
                   </defs>
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -208,8 +210,8 @@ export default function Hero() {
               y2="603.857"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#ABBCFF" />
-              <stop offset="0.859375" stopColor="#4A6CF7" />
+              <stop stopColor="#d1d5db" />
+              <stop offset="0.859375" stopColor="#ffffff" />
             </linearGradient>
           </defs>
         </svg>
@@ -260,8 +262,8 @@ export default function Hero() {
               y2="802.2"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#ABBCFF" />
-              <stop offset="0.859375" stopColor="#4A6CF7" />
+              <stop stopColor="#d1d5db" />
+              <stop offset="0.859375" stopColor="#d1d5db" />
             </linearGradient>
           </defs>
         </svg>
