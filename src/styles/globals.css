@@ -76,6 +76,20 @@
     @apply absolute left-1/2 top-0 -translate-x-1/2 text-[40px] font-extrabold !leading-none sm:text-[60px] lg:text-[95px];
   }
 
+  .title-dark {
+    background: linear-gradient(
+      180deg,
+      rgba(243 244 246) 0%,
+      rgba(255 255 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    opacity: 0.2;
+    @apply absolute left-1/2 top-0 -translate-x-1/2 text-[40px] font-extrabold !leading-none sm:text-[60px] lg:text-[95px];
+  }
+
   /* .dark .title {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   } */

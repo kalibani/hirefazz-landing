@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   return (
     <section
       id="home"
@@ -12,15 +15,22 @@ export default function Hero() {
       <div className="px-4 xl:container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-3 lg:w-1/2">
-            <div className="mx-auto mb-12 max-w-[530px] text-center lg:mb-0 lg:ml-0 lg:text-left">
+            <div className="mx-auto mb-12 max-w-[500px] text-center lg:mb-0 lg:ml-0 lg:w-[650px] lg:max-w-screen-lg lg:text-left">
               <span className="mb-8 inline-block rounded-full bg-primary bg-opacity-5 px-5 py-[10px] font-heading text-base text-primary dark:bg-white dark:bg-opacity-10 dark:text-white">
                 <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary"></span>
-                Next.js Starter for Business
+                {t("title")}
               </span>
               <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                Next.js Boilerplate for Your{" "}
+                {t.rich("tagline", {
+                  for: (chunks) => (
+                    <>
+                      <br></br>
+                      {chunks}{" "}
+                    </>
+                  ),
+                })}
                 <Typewriter
-                  words={["Startup", "SaaS", "Business", "Agency"]}
+                  words={[t("word1"), t("word4"), t("word2"), t("word3")]}
                   cursor
                   loop={0}
                   cursorStyle="|"
@@ -30,17 +40,20 @@ export default function Hero() {
                 />
               </h1>
               <p className="mb-12 text-base text-dark-text">
-                Handcrafted Next.js starter for your next - Startup, Business,
-                Agency or SaaS Website. Comes with refreshing design,
-                integrations and everything you need to kickstart your next web
-                project.
+                {t("description")}
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start">
-                <a
+              <div className="flex flex-wrap items-center justify-center gap-2 md:gap-6 lg:justify-start">
+                <Link
+                  href="/auth/signin"
+                  className="border-secondary text-secondary w-auto whitespace-nowrap rounded border-2 px-6 py-[10px] text-center font-heading hover:bg-opacity-90 dark:text-white md:px-8 md:py-[12px] lg:w-auto"
+                >
+                  {t("cta1")}
+                </Link>
+                <Link
                   href="#features"
                   className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
                 >
-                  Get Started
+                  {t("cta2")}
                   <span className="pl-3">
                     <svg
                       width="16"
@@ -55,23 +68,7 @@ export default function Hero() {
                       />
                     </svg>
                   </span>
-                </a>
-                <a
-                  href="#about"
-                  className="inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
-                >
-                  <span className="pr-3">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      className="fill-current"
-                    >
-                      <path d="M19.376 12.416L8.777 19.482C8.70171 19.5321 8.61423 19.5608 8.52389 19.5652C8.43355 19.5695 8.34373 19.5492 8.264 19.5065C8.18427 19.4639 8.1176 19.4003 8.07111 19.3228C8.02462 19.2452 8.00005 19.1564 8 19.066V4.934C8.00005 4.84356 8.02462 4.75482 8.07111 4.67724C8.1176 4.59966 8.18427 4.53615 8.264 4.49346C8.34373 4.45077 8.43355 4.43051 8.52389 4.43483C8.61423 4.43915 8.70171 4.46789 8.777 4.518L19.376 11.584C19.4445 11.6297 19.5006 11.6915 19.5395 11.7641C19.5783 11.8367 19.5986 11.9177 19.5986 12C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3085 19.4445 12.3703 19.376 12.416Z" />
-                    </svg>
-                  </span>
-                  How it Work
-                </a>
+                </Link>
               </div>
             </div>
           </div>
