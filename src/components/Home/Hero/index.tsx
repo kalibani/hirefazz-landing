@@ -20,7 +20,7 @@ export default function Hero() {
                 <span className="mr-2 inline-block h-2 w-2 rounded-full bg-primary"></span>
                 {t("title")}
               </span>
-              <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
+              <h1 className="mb-5 font-heading text-2xl font-semibold dark:text-white sm:text-2xl md:text-[44px] md:leading-[60px]">
                 {t.rich("tagline", {
                   for: (chunks) => (
                     <>
