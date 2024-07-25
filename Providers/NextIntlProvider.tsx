@@ -1,5 +1,4 @@
 import React from "react";
-
 import { NextIntlClientProvider, AbstractIntlMessages } from "next-intl";
 
 type Props = {

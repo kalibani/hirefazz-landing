@@ -1,9 +1,9 @@
 import SectionTitle from "@/components/Common/SectionTitle";
-import { featuresData } from "@/static-data/features";
-import SingleFeature from "./SingleFeature";
+import { solutionsData } from "@/static-data/solutions";
+import SingleSolution from "./SingleSolution";
 import { useTranslations } from "next-intl";
 
-export default function Features() {
+export default function Solutions() {
   const t = useTranslations("Features");
   return (
     <section id="features" className="pt-14 sm:pt-20 lg:pt-[130px]">
@@ -16,8 +16,8 @@ export default function Features() {
         />
 
         <div className="-mx-4 flex flex-wrap justify-center">
-          {featuresData.map((feature) => (
-            <SingleFeature key={feature?.id} feature={feature} />
+          {solutionsData.map((solution) => (
+            <SingleSolution key={solution?.id} solution={solution} />
           ))}
         </div>
       </div>

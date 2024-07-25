@@ -8,26 +8,20 @@ export default function FooterBottom() {
               href="#"
               className="font-heading text-base text-dark-text hover:text-primary"
             >
-              English
-            </a>
-            <a
-              href="#"
-              className="font-heading text-base text-dark-text hover:text-primary"
-            >
               Privacy Policy
             </a>
             <a
               href="#"
               className="font-heading text-base text-dark-text hover:text-primary"
             >
-              Support
+              Terms of Service
             </a>
           </div>
         </div>
         <div className="w-full px-4 md:w-1/2 lg:w-1/3">
           <div>
             <p className="text-center font-heading text-base text-dark-text lg:text-right">
-              © {new Date().getFullYear()} Startup. All rights reserved
+              © {new Date().getFullYear()} HireFazz. All rights reserved
             </p>
           </div>
         </div>

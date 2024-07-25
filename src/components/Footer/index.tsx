@@ -65,11 +65,11 @@ export default function Footer() {
                     Need live support?
                   </p>
                   <a
-                    href="mailto:support@domain.com"
+                    href="mailto:team@hirefazz.com"
                     className="font-heading text-base text-dark hover:text-primary dark:text-white dark:hover:text-primary"
                   >
                     {" "}
-                    support@domain.com{" "}
+                    team@hirefazz.com{" "}
                   </a>
                 </div>
               </div>

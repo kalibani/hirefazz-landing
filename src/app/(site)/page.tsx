@@ -4,8 +4,9 @@ import About from "@/components/About";
 import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import Brands from "@/components/Brands";
 import CallToAction from "@/components/Home/CallToAction";
-import Features from "@/components/Home/Features";
 import Hero from "@/components/Home/Hero";
+import Features from "@/components/Home/Features";
+import Solutions from "@/components/Home/Solutions";
 import Portfolio from "@/components/Home/Portfolio";
 import Testimonials from "@/components/Home/Testimonials";
 import Pricing from "@/components/Pricing";
@@ -24,17 +25,18 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const locale = await getLocale();
+  // const locale = await getLocale();
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
+  // // Providing all messages to the client
+  // // side is the easiest way to get started
+  // const messages = await getMessages();
   return (
-    <NextIntlProvider locale={locale} messages={messages}>
-      <Navbar />
+    <>
+      {/* <Navbar /> */}
       <Hero />
       <Features />
       <About />
+      <Solutions />
       {/* <Team />
       <Portfolio /> */}
       <Testimonials />
@@ -43,6 +45,6 @@ export default async function Home() {
       <HomeBlogSection />
       <Support />
       <CallToAction />
-    </NextIntlProvider>
+    </>
   );
 }

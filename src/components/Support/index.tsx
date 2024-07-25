@@ -25,28 +25,28 @@ export default function Support() {
                 <div className="flex items-center">
                   <span className="mr-10 h-1 w-full max-w-[200px] bg-dark dark:bg-white"></span>
                   <a
-                    href="mailto:info@gostartup.com"
+                    href="mailto:team@hirefazz.com"
                     className="font-heading text-xl text-dark dark:text-white md:text-3xl lg:text-xl xl:text-3xl"
                   >
                     {" "}
-                    info@gostartup.com{" "}
+                    team@hirefazz.com{" "}
                   </a>
                 </div>
               </div>
             </div>
 
             <div className="-mx-4 flex flex-wrap pt-12">
-              <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+              <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
                     Email Address
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    support@startup.com
+                    team@hirefazz.com
                   </p>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+              {/* <div className="w-full px-4 md:w-1/2 lg:w-1/4">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
                     Phone Number
@@ -55,18 +55,19 @@ export default function Support() {
                     +009 8754 3433 223
                   </p>
                 </div>
-              </div>
-              <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+              </div> */}
+              <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
                     Office Location
                   </h3>
                   <p className="text-base font-medium text-dark-text">
-                    76/A, Green valle, Califonia USA.
+                    Jl. Braga No.109, Braga, Kec. Sumur Bandung, Kota Bandung,
+                    Jawa Barat 40111
                   </p>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+              <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="mb-6 flex items-center space-x-5 lg:justify-end">
                   <a
                     href="#"
