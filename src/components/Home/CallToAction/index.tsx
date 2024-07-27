@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
 export default async function CallToAction() {
   const t = await getTranslations("callToAction");
@@ -71,13 +72,13 @@ export default async function CallToAction() {
             </div>
             <div className="w-full px-4 lg:w-1/3">
               <div className="text-center lg:text-right">
-                <a
-                  href="#"
+                <Link
+                  href="/support"
                   className="inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
                 >
                   {" "}
                   {t("contactUs")}{" "}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
