@@ -222,5 +222,11 @@
     "privacyPolicy": "Kebijakan Privasi",
     "ToS": "Ketentuan Layanan",
     "email": "Alamat Email"
+  },
+  "comingSoon": {
+    "title": "Hal Besar Akan Hadir",
+    "email": "Alamat Email",
+    "notifyMe": "Beri Tau Saya",
+    "description": "Beri Tau Saya Saat Fitur Diluncurkan :)"
   }
 }

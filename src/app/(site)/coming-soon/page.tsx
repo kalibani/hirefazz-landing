@@ -1,11 +1,11 @@
-import Support from "@/components/Support";
+import ComingSoon from "@/components/ComingSoon";
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `Support Page | ${siteName}`,
-  description: "This is Support page HireFazz.com",
+  description: "This is Support page for Go Next.js",
   // other metadata
 };
 
@@ -14,7 +14,7 @@ export default function SupportPage() {
     <>
       <section className="pt-10">
         <div className="px-4 xl:container">
-          <Support />
+          <ComingSoon />
         </div>
       </section>
     </>

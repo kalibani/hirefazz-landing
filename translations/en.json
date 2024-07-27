@@ -221,5 +221,11 @@
     "privacyPolicy": "Privacy Policy",
     "ToS": "Terms of Services",
     "email": "Email Address"
+  },
+  "comingSoon": {
+    "title": "Great Things are Coming Soon",
+    "email": "Email Address",
+    "notifyMe": "Notify Me",
+    "description": "Notify me when Feature is launched :)"
   }
 }
