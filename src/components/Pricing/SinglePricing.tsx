@@ -3,6 +3,7 @@
 import axios from "axios";
 import SingleOffer from "./SingleOffer";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function SinglePricing({ price }: any) {
   const t = useTranslations("Pricing");
@@ -102,8 +103,9 @@ export default function SinglePricing({ price }: any) {
             status={`${t(price?.nickname) === "Business" ? "active" : "inactive"}`}
           />
         </div>
-        <button
-          onClick={() => console.log("test")}
+        <Link
+          href="https://app.hirefazz.com/auth/register"
+          target="_blank"
           className="mt-4 inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white duration-200 hover:bg-primary/90"
         >
           {t("tryFree")}
@@ -121,7 +123,7 @@ export default function SinglePricing({ price }: any) {
               />
             </svg>
           </span>
-        </button>
+        </Link>
       </div>
     </div>
   );

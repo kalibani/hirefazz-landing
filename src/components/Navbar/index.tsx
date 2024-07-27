@@ -209,7 +209,8 @@ export default function Navbar() {
                 </Link> */}
                 <CalendlyDynamic />
                 <Link
-                  href="/auth/signup"
+                  href="https://app.hirefazz.com/auth/register"
+                  target="_blank"
                   className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"
                 >
                   {t("cta2")}

@@ -46,7 +46,8 @@ export default function Hero() {
               <div className="flex flex-wrap items-center justify-center gap-2 md:gap-6 lg:justify-start">
                 <CalendlyDynamic />
                 <Link
-                  href="#features"
+                  href="https://app.hirefazz.com/auth/register"
+                  target="_blank"
                   className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
                 >
                   {t("cta2")}

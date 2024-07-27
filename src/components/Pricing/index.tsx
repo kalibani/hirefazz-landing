@@ -77,15 +77,21 @@ export default function Pricing() {
           <div>
             <div className="my-2 flex justify-start gap-1 px-2 lg:px-0">
               <span className="text-rose-600">*</span>
-              <p className="text-left text-gray-700">{t("priceAdjustment1")}</p>
+              <p className="text-left text-gray-700 dark:text-gray-400">
+                {t("priceAdjustment1")}
+              </p>
             </div>
             <div className="my-2 flex justify-start gap-1 px-2 lg:px-0">
               <span className="text-rose-600">*</span>
-              <p className="text-left text-gray-700">{t("priceAdjustment2")}</p>
+              <p className="text-left text-gray-700 dark:text-gray-400">
+                {t("priceAdjustment2")}
+              </p>
             </div>
-            <div className="mb-10 flex justify-start gap-1 px-2 lg:px-0">
+            <div className="mb-10 flex justify-start gap-1 px-2 lg:px-0 ">
               <span className="text-rose-600">*</span>
-              <p className="text-left text-gray-700">{t("priceAdjustment3")}</p>
+              <p className="text-left text-gray-700 dark:text-gray-400">
+                {t("priceAdjustment3")}
+              </p>
             </div>
           </div>
         </div>
