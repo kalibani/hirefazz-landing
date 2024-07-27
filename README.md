@@ -15,11 +15,6 @@ Installing boilerplate templates are different than ordinary templates, you have
 
 ---
 
-### Useful Links
-- [Discord Community](https://pimjo.com/community)
-- [Support](https://nextjstemplates.com/support)
-- [Twitter](https://x.com/nextjstemplate)
-
 
 ### Installation
 
@@ -40,16 +35,4 @@ npm run dev
 
 It’ll start the template on http://localhost:3000
 
-### Deploying on PaaS
 
-If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
-
-Make sure to edit build command like this when deploying to Vercel.
-
-![prisma-vercel](https://nextjstemplates.com/docs/prisma-vercel.png)
-
-Follow the steps below to complete the installation, if you get stuck feel free to open a [support ticket](/support), we will get back to you ASAP.
-
-### Update Logs:
-**Version - 1.3**
-- Fixed Sanity Revalidation issue
