@@ -21,6 +21,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import CalendlyDynamic from "../Calendly";
+
 export default function Navbar() {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
@@ -72,6 +74,7 @@ export default function Navbar() {
 
   return (
     <>
+      <div id="__next"></div>
       <header
         className={`header absolute left-0 top-0 w-full ${stickyMenu ? "sticky-navbar" : ""}`}
       >
@@ -198,12 +201,13 @@ export default function Navbar() {
                 </>
               ) : ( */}
               <>
-                <Link
+                {/* <Link
                   href="/auth/signin"
                   className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-2.5 text-center font-heading hover:bg-opacity-90 dark:border-white dark:text-white lg:w-auto"
                 >
                   {t("cta1")}
-                </Link>
+                </Link> */}
+                <CalendlyDynamic />
                 <Link
                   href="/auth/signup"
                   className="w-full whitespace-nowrap rounded bg-primary px-6 py-3 text-center font-heading text-white hover:bg-opacity-90 lg:w-auto"

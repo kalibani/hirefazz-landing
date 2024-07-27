@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
+import CalendlyDynamic from "@/components/Calendly";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -43,12 +44,7 @@ export default function Hero() {
                 {t("description")}
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2 md:gap-6 lg:justify-start">
-                <Link
-                  href="/auth/signin"
-                  className="border-secondary text-secondary w-auto whitespace-nowrap rounded border-2 px-6 py-[10px] text-center font-heading hover:bg-opacity-90 dark:border-white  dark:text-white md:px-8 md:py-[11px] lg:w-auto"
-                >
-                  {t("cta1")}
-                </Link>
+                <CalendlyDynamic />
                 <Link
                   href="#features"
                   className="inline-flex items-center rounded bg-primary px-6 py-[10px] font-heading text-base text-white hover:bg-opacity-90 md:px-8 md:py-[14px]"
