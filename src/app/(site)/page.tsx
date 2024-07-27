@@ -1,35 +1,52 @@
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import About from "@/components/About";
-import HomeBlogSection from "@/components/Blog/HomeBlogSection";
+// import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import Brands from "@/components/Brands";
 import CallToAction from "@/components/Home/CallToAction";
 import Hero from "@/components/Home/Hero";
 import Features from "@/components/Home/Features";
 import Solutions from "@/components/Home/Solutions";
-import Portfolio from "@/components/Home/Portfolio";
+// import Portfolio from "@/components/Home/Portfolio";
 import Testimonials from "@/components/Home/Testimonials";
 import Pricing from "@/components/Pricing";
 import Support from "@/components/Support";
-import Team from "@/components/Team";
-import { Metadata } from "next";
-import NextIntlProvider from "../../../Providers/NextIntlProvider";
-import Navbar from "@/components/Navbar";
+// import Team from "@/components/Team";
 
-const siteName = process.env.SITE_NAME;
+export async function generateMetadata() {
+  const t = await getTranslations("metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      t("keywordsText1"),
+      t("keywordsText2"),
+      t("keywordsText3"),
+      t("keywordsText4"),
+      t("keywordsText5"),
+      t("keywordsText6"),
+      t("keywordsText7"),
+      t("keywordsText8"),
+      t("keywordsText9"),
+    ],
+    authors: {
+      name: "HireFazz",
+      url: "https://www.hirefazz.com",
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      url: "https://www.hirefazz.com",
+    },
+    publisher: "https://www.hirefazz.com",
+    alternates: {
+      canonical: "/",
+    },
+  };
+}
 
-export const metadata: Metadata = {
-  title: `Next.js Starter for Business Sites | ${siteName}`,
-  description:
-    "Next.js starter for your next - Startup, Business, Agency or SaaS Website. Comes with refreshing design, integrations and everything you need to kickstart your next web project",
-};
-
-export default async function Home() {
-  // const locale = await getLocale();
-
-  // // Providing all messages to the client
-  // // side is the easiest way to get started
-  // const messages = await getMessages();
+export default function Home() {
   return (
     <>
       {/* <Navbar /> */}

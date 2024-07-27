@@ -28,52 +28,8 @@ export default function LocalLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
-        {/* <meta
-          name="description"
-          content="Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger."
-        />
-
-        <meta
-          name="keywords"
-          content="Premium ginger export,
-          Ginger processing,
-          Ginger washing service,
-          Fresh ginger supplier,
-          Indonesian ginger,
-          Post-harvest technology,
-          Export quality ginger,
-          Ginger packing services,
-          Ginger importers,
-          High-quality ginger,
-          Jasa Cuci Jahe, Jasa Packing Jahe"
-        />
-        <meta
-          name="author"
-          content="PT Berry Trada Multipersada | https://berrytrada.com"
-        /> */}
         <meta name="robots" content="index, follow" />
-        {/* <meta
-          property="og:title"
-          content="Berry Trada | Premium Ginger Exporter and Processor"
-        />
-        <meta
-          property="og:description"
-          content="Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger."
-        /> */}
-        {/* <meta property="og:image" content="/images/logo/berrytrada.png" /> */}
-        {/* <meta property="og:url" content="https://berrytrada.com" /> */}
         <meta property="og:type" content="website" />
-        {/* <title>Berry Trada | Premium Ginger Exporter and Processor</title> */}
-        {/* <meta
-          name="twitter:title"
-          content="Berry Trada | Premium Ginger Exporter and Processor"
-        />
-        <meta
-          name="twitter:description"
-          content="Berry Trada is a leading exporter and processor of premium ginger, offering top-quality fresh ginger, advanced washing services, and comprehensive support for exporters. Rebuilding global trust in Indonesian ginger."
-        />
-        <meta name="twitter:image" content="/images/logo/berrytrada.png" /> */}
-
         {/* <!-- Favicon for All Browsers --> */}
         <link rel="icon" href="/favicon.ico" type="image/png" />
 
