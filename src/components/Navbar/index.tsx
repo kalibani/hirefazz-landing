@@ -1,13 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { navbarData } from "@/static-data/navbar";
 import { onScroll } from "@/utils/scrollActive";
 // import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SetStateAction, useEffect, useState } from "react";
-import GlobalSearchModal from "../GlobalSearch";
 import ThemeToggler from "./ThemeToggler";
 
 import { useTranslate } from "@/hooks/useTranslate";
@@ -298,13 +297,6 @@ export default function Navbar() {
           </div>
         </div>
       </header>
-
-      {searchModalOpen && (
-        <GlobalSearchModal
-          searchModalOpen={searchModalOpen}
-          setSearchModalOpen={setSearchModalOpen}
-        />
-      )}
     </>
   );
 }

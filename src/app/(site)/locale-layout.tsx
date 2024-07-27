@@ -5,7 +5,6 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "../../styles/globals.css";
-import AuthProvider from "../context/AuthContext";
 import ToasterContext from "../context/ToastContext";
 import NextIntlProvider from "@/Providers/NextIntlProvider";
 import Navbar from "@/components/Navbar";
@@ -84,12 +83,10 @@ export default function LocalLayout({
             attribute="class"
             defaultTheme="light"
           >
-            <AuthProvider>
-              <ToasterContext />
-              <Navbar />
-              {children}
-              <Footer />
-            </AuthProvider>
+            <ToasterContext />
+            <Navbar />
+            {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlProvider>
       </body>

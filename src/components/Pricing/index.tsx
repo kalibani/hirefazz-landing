@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pricingData } from "../../../stripe/pricingData";
+import { pricingData } from "@/static-data/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
 import { useTranslations } from "next-intl";
