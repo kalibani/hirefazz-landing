@@ -82,7 +82,7 @@ export default function LocalLayout({
           <ThemeProvider
             enableSystem={false}
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
           >
             <AuthProvider>
               <ToasterContext />
