@@ -162,6 +162,7 @@
     "singleOffer13": "Scoting interview dengan AI",
     "singleOffer14": "Multi Organisasi",
     "singleOffer15": "Insight",
+    "tryFree": "Coba Gratis",
     "priceAdjustment1": "HireFazz menggunakan skema token, Anda hanya membayar yang Anda gunakan.",
     "priceAdjustment2": "Token bisa digunakan untuk mengakses semua fitur.",
     "priceAdjustment3": "Token hanya akan terpotong jika Anda menggunakannya untuk fitur Screening CV dengan AI atau mengundang kandidat saat wawancara otomatis saja.",
@@ -186,11 +187,14 @@
     "contactUs": "Hubungi kami"
   },
   "footer": {
+    "tagline": "Permudah Rekrutmen, Eliminasi Proses Repetitif",
     "company": "Perusahaan",
     "home": "Home",
     "services": "Layanan",
+    "comingSoon": "Akan Datang",
     "about": "Tentang",
     "pricing": "Harga",
+    "careers": "Karir",
     "support": "Dukungan",
     "pressMedia": "Press Media",
     "ourBlog": "Blog Kami",
@@ -199,6 +203,15 @@
     "contactNo": "Nomor Kontak",
     "liveSupport": "Butuh Dukungan Langsung?",
     "newsLetter": "Surat Kabar",
-    "subscribe": "Subscribe untuk mendapat kabar terbaru"
+    "subscribe": "Subscribe untuk mendapat kabar terbaru",
+    "title1": "Tes Kognitif",
+    "title2": "Tes Matematika Dasar",
+    "title3": "Tes Aptitude",
+    "title4": "Tes Pengetahuan Umum",
+    "title5": "Psikotes",
+    "address": "Lokasi Kantor",
+    "privacyPolicy": "Kebijakan Privasi",
+    "ToS": "Ketentuan Layanan",
+    "email": "Alamat Email"
   }
 }

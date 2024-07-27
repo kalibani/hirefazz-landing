@@ -1,4 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default function FooterBottom() {
+  const t = useTranslations("footer");
   return (
     <div className="dark:border-[#2E333D] md:border-t">
       <div className="-mx-4 flex flex-wrap py-5 md:py-7">
@@ -8,13 +11,13 @@ export default function FooterBottom() {
               href="#"
               className="font-heading text-base text-dark-text hover:text-primary"
             >
-              Privacy Policy
+              {t("privacyPolicy")}
             </a>
             <a
               href="#"
               className="font-heading text-base text-dark-text hover:text-primary"
             >
-              Terms of Service
+              {t("ToS")}
             </a>
           </div>
         </div>

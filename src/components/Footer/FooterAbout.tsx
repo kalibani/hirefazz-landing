@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function FooterAbout() {
+  const t = useTranslations("footer");
   return (
     <div className="mb-20 max-w-[330px]">
       <Link href="/" className="mb-6 inline-block">
@@ -21,8 +23,8 @@ export default function FooterAbout() {
         />
       </Link>
 
-      <p className="mb-10 text-base text-dark-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <p className="mb-10 text-base text-dark-text dark:text-white">
+        {t("tagline")}!
       </p>
       <div className="flex items-center space-x-5">
         <a

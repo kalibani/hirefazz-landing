@@ -4,19 +4,25 @@ import { v4 as uuid } from "uuid";
 export const footerLinks: FooterLink[] = [
   {
     id: uuid(),
-    title: "Home",
+    title: "home",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Products",
+    title: "services",
     href: "/",
     external: false,
   },
   {
     id: uuid(),
-    title: "Careers",
+    title: "pricing",
+    href: "/",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "careers",
     href: "/",
     external: false,
     badge: {
@@ -25,8 +31,14 @@ export const footerLinks: FooterLink[] = [
   },
   {
     id: uuid(),
-    title: "Pricing",
-    href: "/",
+    title: "pressMedia",
+    href: "/media",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "ourBlog",
+    href: "/blog",
     external: false,
   },
 ];
@@ -34,26 +46,32 @@ export const footerLinks: FooterLink[] = [
 export const footerLinksTwo: FooterLink[] = [
   {
     id: uuid(),
-    title: "Company",
-    href: "/",
+    title: "title1",
+    href: "/coming-soon",
     external: false,
   },
   {
     id: uuid(),
-    title: "Press Media",
-    href: "/",
+    title: "title2",
+    href: "/coming-soon",
     external: false,
   },
   {
     id: uuid(),
-    title: "Our Blog",
-    href: "/blog",
+    title: "title3",
+    href: "/coming-soon",
     external: false,
   },
   {
     id: uuid(),
-    title: "Contact Us",
-    href: "/contact",
+    title: "title4",
+    href: "/coming-soon",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "title5",
+    href: "/coming-soon",
     external: false,
   },
 ];

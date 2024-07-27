@@ -48,7 +48,7 @@ export default function SinglePricing({ price }: any) {
             {t(price?.description)}
           </p>
         </div>
-        <div className="space-y-4 px-10 pb-[60px] pt-10 text-left">
+        <div className="space-y-4 px-10 pb-[20px] pt-10 text-left">
           <SingleOffer
             text={t("singleOffer1", {
               amount:
@@ -104,9 +104,9 @@ export default function SinglePricing({ price }: any) {
         </div>
         <button
           onClick={() => console.log("test")}
-          className={`inline-flex items-center rounded px-8 py-[14px] font-heading text-base text-white duration-200 ${price?.nickname === "Plus" ? "bg-primary hover:bg-primary/90" : "bg-dark hover:bg-dark/90"}`}
+          className="mt-4 inline-flex items-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white duration-200 hover:bg-primary/90"
         >
-          Join This Plan
+          {t("tryFree")}
           <span className="pl-3">
             <svg
               width="16"

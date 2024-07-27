@@ -162,6 +162,7 @@
     "singleOffer13": "Interview scoring with AI",
     "singleOffer14": "Multi Organization",
     "singleOffer15": "Insight",
+    "tryFree": "Try for Free",
     "priceAdjustment1": "HireFazz uses a token system, only pay for what you use.",
     "priceAdjustment2": "Tokens are applicable for all features.",
     "priceAdjustment3": "Tokens will only be deducted when you use them for AI CV screening or inviting candidates through automatic interview.",
@@ -186,11 +187,14 @@
     "contactUs": "Contact Us"
   },
   "footer": {
+    "tagline": "Streamline Hiring, Eliminate Repetition",
     "company": "Company",
     "home": "Home",
     "services": "Services",
+    "comingSoon": "Coming Soon",
     "about": "About",
     "pricing": "Pricing",
+    "careers": "Careers",
     "support": "Support",
     "pressMedia": "Press Media",
     "ourBlog": "Our Blog",
@@ -199,6 +203,15 @@
     "contactNo": "Contact No",
     "liveSupport": "Need Live Support?",
     "newsLetter": "News Letter",
-    "subscribe": "Subscribe to receive future updates"
+    "subscribe": "Subscribe to receive future updates",
+    "title1": "Cognitive Test",
+    "title2": "Basic Math Test",
+    "title3": "Aptitude Test",
+    "title4": "General Knowledge Test",
+    "title5": "Psychological Test",
+    "address": "Office Location",
+    "privacyPolicy": "Privacy Policy",
+    "ToS": "Terms of Services",
+    "email": "Email Address"
   }
 }

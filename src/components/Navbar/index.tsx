@@ -200,7 +200,7 @@ export default function Navbar() {
               <>
                 <Link
                   href="/auth/signin"
-                  className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-3 text-center font-heading hover:bg-opacity-90 dark:text-white lg:w-auto"
+                  className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-3 text-center font-heading hover:bg-opacity-90 dark:border-white dark:text-white lg:w-auto"
                 >
                   {t("cta1")}
                 </Link>
@@ -251,9 +251,13 @@ export default function Navbar() {
                 <SelectTrigger className="w-[70px]">
                   <SelectValue placeholder={language.toLocaleUpperCase()} />
                 </SelectTrigger>
-                <SelectContent className="z-[999]">
-                  <SelectItem value="id">ID</SelectItem>
-                  <SelectItem value="en">EN</SelectItem>
+                <SelectContent className="z-[999] bg-white dark:bg-dark">
+                  <SelectItem value="id" className="cursor-pointer">
+                    ID
+                  </SelectItem>
+                  <SelectItem value="en" className="cursor-pointer">
+                    EN
+                  </SelectItem>
                 </SelectContent>
               </Select>
 

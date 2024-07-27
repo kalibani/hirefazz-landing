@@ -1,9 +1,11 @@
 "use client";
-import axios from "axios";
+import { useTranslations } from "next-intl";
+// import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
 export default function FooterNewsletter() {
+  const t = useTranslations("footer");
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e: any) => {
@@ -16,15 +18,17 @@ export default function FooterNewsletter() {
     }
 
     try {
-      const res = await axios.post("/api/newsletter", { email });
+      // const res = await axios.post("/api/newsletter", { email });
 
-      if (res.data.status == 400) {
-        toast.error(res.data?.detail);
-        setEmail("");
-      } else {
+      // if (res.data.status == 400) {
+      //   toast.error(res.data?.detail);
+      //   setEmail("");
+      // } else {
+      setTimeout(() => {
         toast.success("Thanks for signing up!");
-        setEmail("");
-      }
+      }, 1000);
+      setEmail("");
+      // }
     } catch (error: any) {
       toast.error(error?.response?.data);
     }
@@ -33,10 +37,10 @@ export default function FooterNewsletter() {
   return (
     <div className="mb-20">
       <h3 className="mb-9 font-heading text-2xl font-medium text-dark dark:text-white">
-        Newsletter
+        {t("newsLetter")}
       </h3>
       <p className="mb-6 font-heading text-base text-dark-text">
-        Subscribe to receive future updates
+        {t("subscribe")}
       </p>
       <form onSubmit={handleSubmit} className="relative">
         <input
@@ -45,7 +49,7 @@ export default function FooterNewsletter() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email address"
+          placeholder={t("email")}
           className="pladeholder-opacity-40 w-full rounded border py-3 pl-5 pr-12 text-base text-dark-text outline-none focus:border-primary dark:border-transparent dark:bg-[#2C3443]"
         />
         <button className="absolute right-0 top-0 flex h-full w-12 items-center justify-center border-l text-dark-text dark:border-[#1F2633]">
