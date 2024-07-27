@@ -1,4 +1,7 @@
-export default function Support() {
+import { getTranslations } from "next-intl/server";
+
+export default async function Support() {
+  const t = await getTranslations("support");
   return (
     <section id="support" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
@@ -9,15 +12,12 @@ export default function Support() {
                 <div className="relative mb-12 max-w-[500px] pt-6 md:mb-14 lg:pt-16">
                   <span className="title !left-0 !translate-x-0">
                     {" "}
-                    SUPPORT{" "}
+                    {t("mainTitle")}
                   </span>
                   <h2 className="mb-5 font-heading text-3xl font-semibold text-dark dark:text-white sm:text-4xl md:text-[50px] md:leading-[60px]">
-                    Need Any Help? Say hello
+                    {t("title")}
                   </h2>
-                  <p className="text-base text-dark-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Donec vitae tortor aliquam ante.
-                  </p>
+                  <p className="text-base text-dark-text">{t("description")}</p>
                 </div>
               </div>
 
@@ -39,7 +39,7 @@ export default function Support() {
               <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
-                    Email Address
+                    {t("email")}
                   </h3>
                   <p className="text-base font-medium text-dark-text">
                     team@hirefazz.com
@@ -59,7 +59,7 @@ export default function Support() {
               <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="mb-6">
                   <h3 className="mb-2 font-heading text-base text-dark dark:text-white sm:text-xl">
-                    Office Location
+                    {t("address")}
                   </h3>
                   <p className="text-base font-medium text-dark-text">
                     Jl. Braga No.109, Braga, Kec. Sumur Bandung, Kota Bandung,
@@ -151,13 +151,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Your Name{" "}
+                    {t("name")}{" "}
                   </label>
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Full Name"
+                    placeholder={t("name")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -169,13 +169,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Email Address{" "}
+                    {t("email")}{" "}
                   </label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Email Address"
+                    placeholder={t("email")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -187,13 +187,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Phone (Optional){" "}
+                    {t("phone")} (Optional){" "}
                   </label>
                   <input
                     type="text"
                     name="phone"
                     id="phone"
-                    placeholder="Phone Number"
+                    placeholder={t("phone")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -205,13 +205,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Subject{" "}
+                    {t("subject")}{" "}
                   </label>
                   <input
                     type="text"
                     name="subject"
                     id="subject"
-                    placeholder="Type Subject"
+                    placeholder={t("subject")}
                     className="w-full border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   />
                 </div>
@@ -223,13 +223,13 @@ export default function Support() {
                     className="mb-3 block font-heading text-base text-dark dark:text-white"
                   >
                     {" "}
-                    Message{" "}
+                    {t("message")}{" "}
                   </label>
                   <textarea
                     rows={4}
                     name="message"
                     id="message"
-                    placeholder="Type Message"
+                    placeholder={t("message")}
                     className="w-full resize-none border-b bg-transparent py-5 text-base font-medium text-dark placeholder-dark-text outline-none focus:border-primary dark:border-[#2C3443] dark:text-white dark:focus:border-white"
                   ></textarea>
                 </div>
@@ -264,15 +264,14 @@ export default function Support() {
                         </span>
                       </div>
                     </div>
-                    I have read the terms of the Service & I accept Privacy
-                    Policy
+                    {t("acceptTnC")}
                   </label>
                 </div>
               </div>
 
               <div className="w-full px-4">
                 <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
-                  Send Message
+                  {t("sendMessage")}
                 </button>
               </div>
             </div>

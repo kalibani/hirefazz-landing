@@ -53,7 +53,7 @@
     "startupDescription": "Fuel your startup's growth by quickly assembling a talented and agile team with our scalable solutions.",
     "university": "University",
     "universityDescription": "Simplify and manage large-scale interviews for student admissions and staff recruitment with our efficient platform.",
-    "officialDom": "Technical and Operational Workers",
+    "officialDom": "Official DOM",
     "officialDomDescription": "Efficiently find and connect with top talent across industries using our targeted recruitment tools.",
     "business": "Business or Corporate",
     "businessDescription": "Optimize your large-scale hiring processes and manage high volumes of candidates seamlessly with our comprehensive platform."
@@ -101,6 +101,23 @@
     "taglineVision": "Setting the Standard for Global Ginger Excellence",
     "descriptionVision": "To revolutionize the Indonesian ginger export industry by setting new standards of quality, efficiency, and trust, ensuring our ginger is recognized globally for its superior freshness and reliability."
   },
+  "solutions": {
+    "solutions": "Solutions",
+    "tagline": "Tailored Solutions for Every Need",
+    "paragraph": "Whether you're a headhunter, university, startup, or corporate business, our comprehensive platform offers specialized tools to streamline your recruitment and interview processes.",
+    "headHuntersTitle": "Headhunter",
+    "headHuntersDescription": "Discover top-tier talent with ease using our advanced search and matching tools. Streamline your recruitment process and find the perfect candidates faster than ever.",
+    "greyCollarTitle": "Technical & Operational Worker",
+    "greyCollarDescription": "Efficiently source and manage skilled technical and operational talent. Our platform ensures you connect with the right candidates for critical roles, saving time and resources.",
+    "whiteCollarTitle": "Professional Worker",
+    "whiteCollarDescription": "Elevate your workforce with highly qualified professionals. Our platform offers precise matching and comprehensive tools to attract the best talent in your industry.",
+    "startupTitle": "Startup",
+    "startupDescription": "Fuel your startup's growth with agile and talented team members. Our scalable solutions help you build a strong foundation quickly and efficiently.",
+    "universityTitle": "University",
+    "universityDescription": "Manage large-scale admissions and staff recruitment seamlessly. Our platform simplifies the interview process, making it easier to assess and select the best candidates.",
+    "officialDomTitle": "Official Dom",
+    "officialDomDescription": "Streamline public sector hiring with our secure, compliant solutions. Our platform ensures efficient recruitment for government and official domains, connecting you with qualified candidates."
+  },
   "gallery": {
     "mainTitle": "PORTOFOLIO",
     "title": "PORTFOLIO Gallery, Previews and Portfolio",
@@ -120,9 +137,10 @@
   "Pricing": {
     "mainTitle": "PRICING",
     "title": "Affordable Pricing With Simple Plans",
+    "paragraph": "Choose the plan that best fits your hiring needs. From small businesses to large enterprises, our pricing options offer flexible solutions to streamline your recruitment process efficiently.",
     "nickNameStarter": "Starter",
     "subtitleStarter": "For small scale hiring",
-    "descriptionStarter": "Perfect for HeadHunters and small businesses. Get started with essential tools for finding the right talent efficiently and affordably.",
+    "descriptionStarter": "Perfect for individuals recruiter and small businesses. Get started with essential tools for finding the right talent efficiently and affordably.",
     "nickNamePlus": "Plus",
     "subtitlePlus": "For medium scale hiring",
     "descriptionPlus": "Best suited for growing businesses. Access advanced features to streamline your hiring process, and improve recruitment efficiency.",
@@ -144,6 +162,9 @@
     "singleOffer13": "Interview scoring with AI",
     "singleOffer14": "Multi Organization",
     "singleOffer15": "Insight",
+    "priceAdjustment1": "HireFazz uses a token system, only pay for what you use.",
+    "priceAdjustment2": "Tokens are applicable for all features.",
+    "priceAdjustment3": "Tokens will only be deducted when you use them for AI CV screening or inviting candidates through automatic interview.",
     "bottomText": "Looking for a company solution?",
     "bottomTextLink": "Contact our team to discuss further"
   },
@@ -153,10 +174,11 @@
     "description": "We believe in providing exceptional support to our clients. Whether you have questions about our services or need assistance with your requirements, our dedicated team is here to assist you every step of the way.",
     "email": "Email Address",
     "phone": "Phone Number",
-    "address": "Warehouse Location",
+    "address": "Office Location",
     "name": "Your Name",
     "subject": "Subject",
     "message": "Message",
+    "acceptTnC": "I have read the terms of the Service & I accept Privacy Policy",
     "sendMessage": "Send Message"
   },
   "callToAction": {

@@ -4,13 +4,13 @@ import SingleSolution from "./SingleSolution";
 import { useTranslations } from "next-intl";
 
 export default function Solutions() {
-  const t = useTranslations("Features");
+  const t = useTranslations("solutions");
   return (
-    <section id="features" className="pt-14 sm:pt-20 lg:pt-[130px]">
+    <section id="solutions" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         {/* <!-- Section Title --> */}
         <SectionTitle
-          mainTitle={t("features")}
+          mainTitle={t("solutions")}
           title={t("tagline")}
           paragraph={t("paragraph")}
         />

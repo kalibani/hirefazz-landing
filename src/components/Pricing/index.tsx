@@ -2,15 +2,17 @@ import Link from "next/link";
 import { pricingData } from "../../../stripe/pricingData";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePricing from "./SinglePricing";
+import { useTranslations } from "next-intl";
 
 export default function Pricing() {
+  const t = useTranslations("Pricing");
   return (
     <section id="pricing" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
         <SectionTitle
-          mainTitle="PRICING"
-          title="Affordable Pricing With Simple Plans"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
+          mainTitle={t("mainTitle")}
+          title={t("title")}
+          paragraph={t("paragraph")}
         />
 
         <div className="relative z-10 flex flex-wrap justify-center overflow-hidden rounded drop-shadow-light dark:drop-shadow-none">
@@ -72,17 +74,31 @@ export default function Pricing() {
             pricingData.map((price, key) => (
               <SinglePricing price={price} key={key} />
             ))}
+          <div>
+            <div className="my-2 flex justify-start gap-1 px-2 lg:px-0">
+              <span className="text-rose-600">*</span>
+              <p className="text-left text-gray-700">{t("priceAdjustment1")}</p>
+            </div>
+            <div className="my-2 flex justify-start gap-1 px-2 lg:px-0">
+              <span className="text-rose-600">*</span>
+              <p className="text-left text-gray-700">{t("priceAdjustment2")}</p>
+            </div>
+            <div className="mb-10 flex justify-start gap-1 px-2 lg:px-0">
+              <span className="text-rose-600">*</span>
+              <p className="text-left text-gray-700">{t("priceAdjustment3")}</p>
+            </div>
+          </div>
         </div>
 
         <div className="pt-12 text-center">
           <h3 className="mb-5 font-heading text-xl font-medium text-dark dark:text-white sm:text-3xl">
-            Looking for a company solution?
+            {t("bottomText")}
           </h3>
           <Link
             href="/support"
             className="text-base text-dark-text underline-offset-2 duration-200 hover:text-primary hover:underline"
           >
-            Contact our team to get a quote.
+            {t("bottomTextLink")}
           </Link>
         </div>
       </div>

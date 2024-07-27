@@ -2,7 +2,7 @@ import { Feature } from "@/types/feature";
 import { useTranslations } from "next-intl";
 
 export default function SingleSolution({ solution }: { solution: Feature }) {
-  const t = useTranslations("Features");
+  const t = useTranslations("solutions");
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div className="group mx-auto mb-10 max-w-[380px] text-center md:mb-16">

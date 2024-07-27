@@ -42,7 +42,7 @@ export default async function Home() {
       <Testimonials />
       <Brands />
       <Pricing />
-      <HomeBlogSection />
+      {/* <HomeBlogSection /> */}
       <Support />
       <CallToAction />
     </>

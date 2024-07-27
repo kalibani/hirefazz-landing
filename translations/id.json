@@ -101,6 +101,23 @@
     "taglineVision": "Menetapkan Standar Keunggulan Jahe Global",
     "descriptionVision": "Visi kami adalah menjadi nama terkemuka dalam industri jahe, diakui karena komitmen kami terhadap kualitas, inovasi, dan keberlanjutan. Kami membayangkan masa depan di mana"
   },
+  "solutions": {
+    "solutions": "Solusi",
+    "tagline": "Solusi yang Disesuaikan untuk Setiap Kebutuhan",
+    "paragraph": "Apakah Anda seorang headhunter, universitas, startup, atau bisnis korporat, platform kami yang komprehensif menawarkan alat khusus untuk menyederhanakan proses rekrutmen dan wawancara Anda.",
+    "headHuntersTitle": "Headhunter",
+    "headHuntersDescription": "Temukan talenta terbaik dengan mudah menggunakan alat pencarian dan pencocokan canggih kami. Sederhanakan proses rekrutmen Anda dan temukan kandidat sempurna lebih cepat dari sebelumnya.",
+    "greyCollarTitle": "Pekerja Teknis dan Operasional",
+    "greyCollarDescription": "Sumber daya dan kelola talenta teknis dan operasional dengan efisien. Platform kami memastikan Anda terhubung dengan kandidat yang tepat untuk peran penting, menghemat waktu dan sumber daya.",
+    "whiteCollarTitle": "Pekerja Profesional",
+    "whiteCollarDescription": "Tingkatkan kualitas tenaga kerja Anda dengan profesional yang berkualifikasi tinggi. Platform kami menawarkan pencocokan yang tepat dan alat komprehensif untuk menarik talenta terbaik di industri Anda.",
+    "startupTitle": "Startup",
+    "startupDescription": "Dorong pertumbuhan startup Anda dengan anggota tim yang gesit dan berbakat. Solusi kami yang dapat diskalakan membantu Anda membangun fondasi yang kuat dengan cepat dan efisien.",
+    "universityTitle": "Universitas",
+    "universityDescription": "Kelola penerimaan mahasiswa dan perekrutan staf skala besar dengan mudah. Platform kami menyederhanakan proses wawancara, memudahkan penilaian dan seleksi kandidat terbaik.",
+    "officialDomTitle": "Kedinasan",
+    "officialDomDescription": "Sederhanakan perekrutan sektor publik dengan solusi kami yang aman dan sesuai peraturan. Platform kami memastikan rekrutmen yang efisien untuk pemerintah dan domain resmi, menghubungkan Anda dengan kandidat berkualitas."
+  },
   "gallery": {
     "mainTitle": "PORTOFOLIO",
     "title": "Galeri, Pratinjau dan Portofolio",
@@ -120,9 +137,10 @@
   "Pricing": {
     "mainTitle": "HARGA",
     "title": "Harga Terjangkau dengan Paket Sederhana",
+    "paragraph": "Pilih paket yang sesuai dengan kebutuhan perekrutan Anda. Dari bisnis kecil hingga perusahaan besar, pilihan harga kami menawarkan solusi fleksibel untuk menyederhanakan proses rekrutmen Anda secara efisien.",
     "nickNameStarter": "Starter",
     "subtitleStarter": "Untuk Rekrutmen Skala Kecil",
-    "descriptionStarter": "Cocok untuk HeadHunters dan bisnis kecil. Mulailah dengan fitur dasar untuk menemukan talenta yang tepat secara efisien dan terjangkau.",
+    "descriptionStarter": "Cocok untuk individual rekruter dan bisnis kecil. Mulailah dengan fitur dasar untuk menemukan talenta yang tepat secara efisien dan terjangkau.",
     "nickNamePlus": "Plus",
     "subtitlePlus": "Untuk Rekrutmen Skala Sedang",
     "descriptionPlus": "Paling sesuai untuk bisnis yang sedang berkembang. Akses fitur canggih untuk menyederhanakan proses perekrutan Anda.",
@@ -144,19 +162,23 @@
     "singleOffer13": "Scoting interview dengan AI",
     "singleOffer14": "Multi Organisasi",
     "singleOffer15": "Insight",
+    "priceAdjustment1": "HireFazz menggunakan skema token, Anda hanya membayar yang Anda gunakan.",
+    "priceAdjustment2": "Token bisa digunakan untuk mengakses semua fitur.",
+    "priceAdjustment3": "Token hanya akan terpotong jika Anda menggunakannya untuk fitur Screening CV dengan AI atau mengundang kandidat saat wawancara otomatis saja.",
     "bottomText": "Mencari solusi perusahaan?",
     "bottomTextLink": "Hubungi tim kami untuk mendapatkan penawaran"
   },
   "support": {
     "mainTitle": "BANTUAN",
     "title": "Butuh bantuan? Hubungi kami",
-    "description": "Kami percaya dalam memberikan dukungan luar biasa kepada klien kami. Apakah Anda memiliki pertanyaan tentang layanan kami atau memerlukan bantuan terkait kebutuhan Anda, tim kami siap membantu Anda di setiap langkah.",
+    "description": "Kami percaya dalam memberikan dukungan luar biasa kepada klien kami. Apakah Anda memiliki pertanyaan tentang layanan kami atau memerlukan bantuan terkait kebutuhan Anda, tim kami siap membantu Anda.",
     "email": "Alamat Email",
     "phone": "Nomor Ponsel",
-    "address": "Lokasi Gudang",
+    "address": "Lokasi Kami",
     "name": "Nama Anda",
     "subject": "Judul",
     "message": "Pesan",
+    "acceptTnC": "Saya telah membaca dan menerima kebijakan privasi dan syarat & ketentuan",
     "sendMessage": "Kirim Pesan"
   },
   "callToAction": {
