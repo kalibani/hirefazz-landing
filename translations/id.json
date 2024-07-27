@@ -134,10 +134,14 @@
   "testimonials": {
     "mainTitle": "Testimonial",
     "title": "Kata Klien Tentang Kami",
-    "description": "Di Berry Trada, komitmen kami terhadap kualitas dan keunggulan telah membuat kami mendapatkan kepercayaan dan kepuasan klien kami. Baca apa yang dikatakan importir dan pelanggan layanan cuci kami tentang pengalaman mereka bersama kami.",
-    "review1": "Jahe kualitas premium mereka secara konsisten segar dan beraroma. Keandalan dan layanan terbaik menjadikan mereka pemasok utama kami. Kami mempercayai Berry Trada untuk memberikan yang terbaik setiap saat.",
-    "review2": "Kami telah mengimpor jahe dari Berry Trada selama lebih dari setahun, dan komitmen mereka terhadap kualitas tidak tertandingi. Penggunaan teknologi pasca panen yang canggih memastikan kami menerima jahe paling segar.",
-    "review3": "Layanan pencucian Berry Trada telah meningkatkan kualitas jahe kami secara signifikan. Pilihan pencucian dasar dan premiumnya menyeluruh dan efisien, memastikan produk kami siap dipasarkan dan bebas dari kotoran. Ini adalah layanan penting untuk operasi ekspor kami."
+    "description": "Temukan bagaimana HireFazz telah mentransformasi proses perekrutan mereka, membuatnya lebih cepat, lebih cerdas, dan lebih efisien.",
+    "review1": "HireFazz telah merevolusi proses perekrutan kami. Alat bertenaga AI menghemat banyak waktu kami dengan mengotomatisasi tugas-tugas yang membosankan seperti screening CV dan wawancara awal. Efisiensi ini memungkinkan kami lebih fokus pada penentuan keputusan.",
+    "review2": "Sebagai startup, menemukan talenta yang tepat dengan cepat sangat penting. Platform HireFazz memudahkan kami untuk memperluas tim dengan profesional terampil.",
+    "review3": "Fitur otomatisasi dari HireFazz merampingkan proses perekrutan kami, membuatnya lebih efisien dan secara signifikan mengurangi waktu perekrutan kami. Kemampuan platform untuk mengelola volume kandidat yang besar dan memberikan analitik yang berwawasan sangat berharga bagi tim HR kami."
+  },
+  "trustedBy": {
+    "title": "Dipercaya oleh",
+    "description": "Platform kami digunakan oleh berbagai industri, memastikan proses perekrutan berkualitas dan hasil yang luar biasa."
   },
   "Pricing": {
     "mainTitle": "HARGA",

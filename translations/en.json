@@ -133,10 +133,14 @@
   "testimonials": {
     "mainTitle": "Testimonial",
     "title": "TESTIMONIAL What Our Clients Say About Us",
-    "description": "Our commitment to quality and excellence has earned us the trust and satisfaction of our clients. Read what our importers and customers of washing services have to say about their experience with us.",
-    "review1": "Their premium quality ginger is consistently fresh and flavorful. The reliability and excellent service make them our go-to supplier. We trust Berry Trada to deliver the best every time.",
-    "review2": "We have been importing ginger from Berry Trada for over a year now, and their commitment to quality is unmatched. Their use of advanced post-harvest technology ensures that we receive the freshest ginger.",
-    "review3": "Berry Trada's washing services have significantly improved the quality of our ginger. Their basic and premium washing options are thorough and efficient, ensuring our products are market-ready and free from impurities. It's a vital service for our export operations."
+    "description": "Don't just take our word for it—hear from our satisfied clients! Discover how HireFazz has transformed their hiring process, making it faster, smarter, and more efficient.",
+    "review1": "HireFazz has revolutionized our recruitment process. The AI-driven tools saved us countless hours by automating tedious tasks like CV screening and initial interviews. This efficiency allowed us to focus more on interviewing top-tier candidates, ultimately improving the quality of our hires.",
+    "review2": "As a startup, finding the right talent quickly is crucial. HireFazz's platform made it easy to scale our team with skilled professionals. The intuitive interface and powerful features helped us navigate the recruitment process smoothly, even with limited resources.",
+    "review3": "The automation features of HireFazz streamlined our hiring process, making it more efficient and reducing our time-to-hire significantly. The platform's ability to manage large volumes of candidates and provide insightful analytics was invaluable for our HR team."
+  },
+  "trustedBy": {
+    "title": "Trusted By",
+    "description": "Our platform is used by a diverse range of industries, ensuring quality hiring processes and exceptional results."
   },
   "Pricing": {
     "mainTitle": "PRICING",

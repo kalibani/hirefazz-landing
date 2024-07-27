@@ -1,13 +1,12 @@
+import { useTranslations } from "next-intl";
 import SectionTitle from "../Common/SectionTitle";
 
 export default function Brands() {
+  const t = useTranslations("trustedBy");
   return (
     <section className="pt-14 sm:pt-20 lg:pt-24">
       <div className="px-4 xl:container">
-        <SectionTitle
-          title="Trusted by Global Brands"
-          paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
-        />
+        <SectionTitle title={t("title")} paragraph={t("description")} />
         <div className="border-b pb-24 dark:border-[#2E333D]">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
