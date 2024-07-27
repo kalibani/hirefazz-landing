@@ -45,7 +45,7 @@ export default function Hero() {
               <div className="flex flex-wrap items-center justify-center gap-2 md:gap-6 lg:justify-start">
                 <Link
                   href="/auth/signin"
-                  className="border-secondary text-secondary w-auto whitespace-nowrap rounded border-2 px-6 py-[10px] text-center font-heading hover:bg-opacity-90 dark:border-white  dark:text-white md:px-8 md:py-[12px] lg:w-auto"
+                  className="border-secondary text-secondary w-auto whitespace-nowrap rounded border-2 px-6 py-[10px] text-center font-heading hover:bg-opacity-90 dark:border-white  dark:text-white md:px-8 md:py-[11px] lg:w-auto"
                 >
                   {t("cta1")}
                 </Link>

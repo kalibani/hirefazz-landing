@@ -200,7 +200,7 @@ export default function Navbar() {
               <>
                 <Link
                   href="/auth/signin"
-                  className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-3 text-center font-heading hover:bg-opacity-90 dark:border-white dark:text-white lg:w-auto"
+                  className="border-secondary text-secondary w-full whitespace-nowrap rounded border-2 px-6 py-2.5 text-center font-heading hover:bg-opacity-90 dark:border-white dark:text-white lg:w-auto"
                 >
                   {t("cta1")}
                 </Link>

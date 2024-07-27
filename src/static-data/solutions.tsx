@@ -3,11 +3,12 @@ import { v4 as uuid } from "uuid";
 
 import {
   ClipboardPenLineIcon,
-  FilePlus2Icon,
-  FileScanIcon,
-  FileVideo2Icon,
+  Lightbulb,
+  UserRoundCheckIcon,
+  MonitorCogIcon,
   UserCogIcon,
-  UsersIcon,
+  Building,
+  GraduationCap,
 } from "lucide-react";
 
 export const solutionsData: Feature[] = [
@@ -15,36 +16,36 @@ export const solutionsData: Feature[] = [
     id: uuid(),
     title: "headHuntersTitle",
     description: "headHuntersDescription",
-    icon: <FileScanIcon width={44} height={44} />,
+    icon: <UserRoundCheckIcon width={44} height={44} />,
   },
   {
     id: uuid(),
     title: "greyCollarTitle",
     description: "greyCollarDescription",
-    icon: <FileVideo2Icon width={44} height={44} />,
+    icon: <UserCogIcon width={44} height={44} />,
   },
   {
     id: uuid(),
     title: "whiteCollarTitle",
     description: "whiteCollarDescription",
-    icon: <FilePlus2Icon width={44} height={44} />,
+    icon: <MonitorCogIcon width={44} height={44} />,
   },
   {
     id: uuid(),
     title: "startupTitle",
     description: "startupDescription",
-    icon: <UserCogIcon width={44} height={44} />,
+    icon: <Lightbulb width={44} height={44} />,
   },
   {
     id: uuid(),
     title: "universityTitle",
     description: "universityDescription",
-    icon: <UsersIcon width={44} height={44} />,
+    icon: <GraduationCap width={44} height={44} />,
   },
   {
     id: uuid(),
     title: "officialDomTitle",
     description: "officialDomDescription",
-    icon: <ClipboardPenLineIcon width={44} height={44} />,
+    icon: <Building width={44} height={44} />,
   },
 ];
