@@ -1,7 +1,71 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+import { useState, useRef, LegacyRef, FormEvent } from "react";
+import { useTranslations } from "next-intl";
+import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
+import { LoaderCircle } from "lucide-react";
 
-export default async function Support() {
-  const t = await getTranslations("support");
+export default function Support() {
+  const t = useTranslations("support");
+  const [isLoading, setLoading] = useState(false);
+
+  const form = useRef<HTMLFormElement>(null);
+  const submitNotification = (error = "") => {
+    if (error) {
+      toast.error(`Failed to sent message: ${error}`, {
+        style: {
+          background: "#eb4034",
+          color: "#fff",
+          maxWidth: 500,
+        },
+      });
+    } else {
+      toast.success(`Successfully sent message`, {
+        style: {
+          background: "#04111d",
+          color: "#fff",
+        },
+      });
+    }
+  };
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (
+      // @ts-ignore
+      form.current?.name?.value &&
+      form.current?.email?.value &&
+      form.current?.subject?.value &&
+      form.current?.message?.value &&
+      form.current?.checkbox?.checked
+    ) {
+      setLoading(true);
+      const target = e.target as HTMLFormElement;
+
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+          form.current!,
+          process.env.NEXT_PUBLIC_KEY,
+        )
+        .then(
+          () => {
+            submitNotification();
+          },
+          (error) => {
+            submitNotification(error?.text);
+          },
+        )
+        .finally(() => {
+          target.reset();
+          setLoading(false);
+        });
+    } else {
+      submitNotification("Please fill all the form");
+    }
+  };
   return (
     <section id="support" className="pt-14 sm:pt-20 lg:pt-[130px]">
       <div className="px-4 xl:container">
@@ -138,11 +202,7 @@ export default async function Support() {
         </div>
 
         <div className="mx-auto max-w-[780px] pt-[130px]">
-          <form
-            className=""
-            action="https://formbold.com/s/unique_form_id"
-            method="POST"
-          >
+          <form ref={form as LegacyRef<HTMLFormElement>} onSubmit={sendEmail}>
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 sm:w-1/2">
                 <div className="mb-12">
@@ -246,6 +306,7 @@ export default async function Support() {
                         type="checkbox"
                         id="supportCheckbox"
                         className="sr-only"
+                        name="checkbox"
                       />
                       <div className="box mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded border dark:border-[#414652]">
                         <span className="opacity-0">
@@ -270,8 +331,12 @@ export default async function Support() {
               </div>
 
               <div className="w-full px-4">
-                <button className="flex w-full items-center justify-center rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90">
+                <button
+                  className="flex w-full items-center justify-center gap-2 rounded bg-primary px-8 py-[14px] font-heading text-base text-white hover:bg-opacity-90"
+                  disabled={isLoading}
+                >
                   {t("sendMessage")}
+                  {isLoading ? <LoaderCircle className="animate-spin" /> : null}
                 </button>
               </div>
             </div>
