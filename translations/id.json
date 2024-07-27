@@ -41,7 +41,22 @@
     "collaboration": "Kolaborasi Rekrutmen",
     "collaborationDescription": "Rekrut kandidat dengan kolaborasi tim yang efektif.",
     "test5": "Psikotes Umum",
-    "test5Description": "Evaluasi aspek psikologis dan kepribadian."
+    "test5Description": "Evaluasi aspek psikologis dan kepribadian.",
+    "solutions": "Solusi",
+    "headHunters": "Headhunter",
+    "headHuntersDescription": "Temukan dan hubungkan dengan talenta terbaik di berbagai industri menggunakan alat rekrutmen kami yang terfokus.",
+    "greyCollar": "Pekerja Teknis dan Operasional",
+    "greyCollarDescription": "Permudah proses perekrutan untuk peran teknis dan operasional dengan pencocokan yang presisi.",
+    "whiteCollar": "Pekerja Profesional",
+    "whiteCollarDescription": "Temukan dan tarik pekerja profesional berkualifikasi untuk meningkatkan keahlian dan kapabilitas organisasi Anda.",
+    "startup": "Startup",
+    "startupDescription": "Dorong pertumbuhan startup Anda dengan cepat membangun tim yang berbakat dan gesit melalui solusi yang dapat diskalakan",
+    "university": "Universitas",
+    "universityDescription": "Sederhanakan dan kelola wawancara skala besar untuk penerimaan mahasiswa dan perekrutan staf dengan platform kami yang efisien.",
+    "officialDom": "Kedinasan & Pekerja Publik",
+    "officialDomDescription": "Sederhanakan proses perekrutan di sektor pemerintah atau publik dengan solusi rekrutmen kami yang aman dan sesuai peraturan.",
+    "business": "Binsis atau korporate",
+    "businessDescription": "Optimalkan proses perekrutan skala besar dan kelola volume kandidat yang tinggi dengan lancar melalui platform kami yang komprehensif"
   },
   "Hero": {
     "title": "Permudah Rekrutmen. Lebih Cepat, Lebih Cerdas, Efektif!",

@@ -41,7 +41,22 @@
     "collaboration": "Collaborative Hiring",
     "collaborationDescription": "Recruit candidates with effective team collaboration.",
     "test5": "Psychological Test",
-    "test5Description": "Evaluation of psychological aspects and personality."
+    "test5Description": "Evaluation of psychological aspects and personality.",
+    "solutions": "Solutions",
+    "headHunters": "Headhunter",
+    "headHuntersDescription": "Efficiently find and connect with top talent across industries using our targeted recruitment tools.",
+    "greyCollar": "Technical and Operational Workers",
+    "greyCollarDescription": "Efficiently find and connect with top talent across industries using our targeted recruitment tools.",
+    "whiteCollar": "Professional Worker",
+    "whiteCollarDescription": "Discover and attract qualified professionals to elevate your organization's expertise and capabilities.",
+    "startup": "Startup",
+    "startupDescription": "Fuel your startup's growth by quickly assembling a talented and agile team with our scalable solutions.",
+    "university": "University",
+    "universityDescription": "Simplify and manage large-scale interviews for student admissions and staff recruitment with our efficient platform.",
+    "officialDom": "Technical and Operational Workers",
+    "officialDomDescription": "Efficiently find and connect with top talent across industries using our targeted recruitment tools.",
+    "business": "Business or Corporate",
+    "businessDescription": "Optimize your large-scale hiring processes and manage high volumes of candidates seamlessly with our comprehensive platform."
   },
   "Hero": {
     "title": "Effortless Hiring. Faster, Smarter, Effective!",
